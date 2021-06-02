@@ -1,59 +1,70 @@
 <script context="module">
-	export const prerender = true;
+	import Munchi from '$lib/components/Munchi.svelte';
+
+const swipeConfig = {
+  autoplay: true,
+  delay: 10000,
+  showIndicators: false,
+  transitionDuration: 333,
+  defaultIndex: 0,
+};
+	export const prerender = true
 </script>
 
 <script>
-	import Counter from '$lib/Counter/index.svelte';
+
 </script>
 
 <svelte:head>
-	<title>Home</title>
+	<title>Leonela Venturo | Copywriter & Seo</title>
 </svelte:head>
 
-<section>
-	<h1>
-		<div class="welcome">
-			<picture>
-				<source srcset="svelte-welcome.webp" type="image/webp" />
-				<img src="svelte-welcome.png" alt="Welcome" />
-			</picture>
-		</div>
-
-		to your new<br />SvelteKit app
-	</h1>
-
-	<h2>
-		try editing <strong>src/routes/index.svelte</strong>
-	</h2>
-
-	<Counter />
-</section>
+<main>
+	<Munchi />
+	<!-- <div class="container">
+		<h2>Contando tu historia en vez de un simple “sobre&nbsp;mi”, lograrás sobresalir entre otras personas que copian y pegan sus objetivos.</h2>
+	</div> --> 
+</main>
 
 <style>
-	section {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		flex: 1;
-	}
-
-	h1 {
-		width: 100%;
-	}
-
-	.welcome {
-		position: relative;
-		width: 100%;
-		height: 0;
-		padding: 0 0 calc(100% * 495 / 2048) 0;
-	}
-
-	.welcome img {
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		top: 0;
-		display: block;
-	}
+.swipe-holder{
+	height: 100vh;
+    width: 100%;
+	position: absolute;
+	bottom: 0;
+	z-index: 1;
+  }
+main{
+	padding-top: 80px;
+	display:flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+main .container{
+	color: white;
+	position: absolute;
+	bottom: 0;
+	display: flex;
+	justify-content: center;
+	margin: 0 0 3em 0;
+	z-index: 2;
+	backdrop-filter: blur(4px);
+	background: rgba(80, 54, 73, 0.3);
+}
+h2{
+	text-align: center;
+	padding: 0 20px;
+	font-size: 0.9rem;
+	letter-spacing: 1.4px;
+	line-height: 27px;
+	text-transform: uppercase;
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: normal;
+	text-align: center;
+	font-variant: small-caps;
+	text-shadow: 1px 1px 1px rgba(66, 20, 60, 0.8);
+	color: #FFFFFF;
+}
 </style>
