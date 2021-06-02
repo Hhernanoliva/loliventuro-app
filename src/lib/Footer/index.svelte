@@ -1,7 +1,6 @@
 <script>
 	import { page } from '$app/stores';
 	import IconAbout from '$lib/components/Iconabout.svelte'
-	import IconService from '$lib/components/Iconservice.svelte'
 	import IconAsistencia from '$lib/components/Iconasistencia.svelte'
 
 </script>
