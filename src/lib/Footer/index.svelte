@@ -10,9 +10,8 @@
 	<nav>
 		<ul>
 			
-			<li class:active={$page.path === '/about'}> <a sveltekit:prefetch href="/about">				<IconAbout />  Sobre Mi</a></li>
-			<li class:active={$page.path === '/service'}><a sveltekit:prefetch href="/service"><IconService /> Servicios</a></li>
-			<li class:active={$page.path === '/asis'}><a sveltekit:prefetch href="/asis"><IconAsistencia /> Asistencia</a></li>
+			<li class:active={$page.path === '/about'}> <a sveltekit:prefetch href="/about"><IconAbout /> Sobre Mi </a></li>
+			<li class:active={$page.path === '/asis'}><a sveltekit:prefetch href="/asis"><IconAsistencia style="margin-bottom: 10px;"/> Blog </a></li>
 		</ul>
 	</nav>
 </footer>
@@ -73,7 +72,7 @@
 		display: flex;
 		height: 100%;
 		align-items: center;
-		padding: 0 1.5em;
+		padding: 0 2em;
 		font-weight: 700;
 		font-size: 0.8rem;
 		text-transform: uppercase;
@@ -84,6 +83,7 @@
 		color: #fff;
 		display: flex;
 		flex-direction: column;
+		justify-content: center;
 	}
 
 	a:hover {

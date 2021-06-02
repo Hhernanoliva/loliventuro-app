@@ -1,18 +1,17 @@
 <script context="module">
 	import Munchi from '$lib/components/Munchi.svelte';
-
-const swipeConfig = {
-  autoplay: true,
-  delay: 10000,
-  showIndicators: false,
-  transitionDuration: 333,
-  defaultIndex: 0,
-};
 	export const prerender = true
 </script>
 
 <script>
-
+	import { Swipe, SwipeItem } from "svelte-swipe";
+	const swipeConfig = {
+	autoplay: true,
+	delay: 10000,
+	showIndicators: false,
+	transitionDuration: 333,
+	defaultIndex: 0,
+};
 </script>
 
 <svelte:head>
@@ -20,21 +19,34 @@ const swipeConfig = {
 </svelte:head>
 
 <main>
-	<Munchi />
+		<Swipe {...swipeConfig}>
+		  <SwipeItem>
+			<Munchi />
+		  </SwipeItem>
+	  
+		  <SwipeItem>
+
+		  </SwipeItem>
+	  
+		  <SwipeItem>
+			<Munchi />
+		  </SwipeItem>
+		</Swipe>
+
+
+
 	<!-- <div class="container">
 		<h2>Contando tu historia en vez de un simple “sobre&nbsp;mi”, lograrás sobresalir entre otras personas que copian y pegan sus objetivos.</h2>
 	</div> --> 
 </main>
 
 <style>
-.swipe-holder{
+main{
 	height: 100vh;
     width: 100%;
 	position: absolute;
 	bottom: 0;
 	z-index: 1;
-  }
-main{
 	padding-top: 80px;
 	display:flex;
 	justify-content: center;
