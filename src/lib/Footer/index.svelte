@@ -24,6 +24,8 @@
 		display: flex;
 		justify-content: center;
 		z-index: 5;
+		background-color: #ffb3dd7c;
+		box-shadow: 0px -1px 5px rgba(0, 0, 0, 0.25);
 	}
 
 	nav {
@@ -86,6 +88,6 @@
 	}
 
 	a:hover {
-		color: var(--accent-color);
+		color: #5f4b8b;
 	}
 </style>

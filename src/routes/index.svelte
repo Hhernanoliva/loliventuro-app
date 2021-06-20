@@ -6,8 +6,8 @@
 <script>
 	import { Swipe, SwipeItem } from "svelte-swipe";
 	const swipeConfig = {
-	autoplay: true,
-	delay: 10000,
+	autoplay: false,
+	delay: 15000,
 	showIndicators: false,
 	transitionDuration: 333,
 	defaultIndex: 0,
@@ -20,7 +20,12 @@
 
 <main>
 		<Swipe {...swipeConfig}>
-		  <SwipeItem>
+		  <SwipeItem class="swipeContainer">
+			  <p class="text">
+				Compartir buen contenido es un desafío si no tienes las herramientas para investigar lo que los usuarios buscan diariamente, en el intento de hacerlo vos mismo te encontrarás con problemas que solo desembocan en tiempo mal gastado. <br><br>
+
+				Estoy acá para ayudarte a redactar textos empáticos, construidos con palabras claves que posicionan orgánicamente a largo plazo, generan mayor número de visualizaciones y aumentan tus ventas o conversiones.
+			  </p>
 			<Munchi />
 		  </SwipeItem>
 	  
@@ -53,17 +58,12 @@ main{
 	flex-direction: column;
 	align-items: center;
 }
-main .container{
-	color: white;
+.text{
+	text-align: center;
 	position: absolute;
-	bottom: 0;
-	display: flex;
-	justify-content: center;
-	margin: 0 0 3em 0;
-	z-index: 2;
-	backdrop-filter: blur(4px);
-	background: rgba(80, 54, 73, 0.3);
+	top: 120px;
 }
+
 h2{
 	text-align: center;
 	padding: 0 20px;
