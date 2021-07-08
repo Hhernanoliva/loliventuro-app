@@ -12,7 +12,9 @@
 
 <style>
 .app{
-	background: #5f4b8b;
+	/* background: #5f4b8b; */
+	/* color: black !important; */
+	background: #c2bfb6;
 	width:  100vw;
 	height: 100vh;
 	display: flex;

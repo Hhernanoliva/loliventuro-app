@@ -30,7 +30,9 @@
 		  </SwipeItem>
 	  
 		  <SwipeItem>
-
+			<h2> HOLA lalalala</h2>
+			<h1> salkdfjlsakdjflksadfj</h1>
+			<h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi blanditiis quia, itaque ea reiciendis quo, quidem deleniti accusamus fugit temporibus earum tempora, nemo eligendi dolor! Repellat aut sint perferendis debitis.</h1>
 		  </SwipeItem>
 	  
 		  <SwipeItem>
@@ -47,7 +49,7 @@
 
 <style>
 main{
-	height: 100vh;
+	height: 800px;
     width: 100%;
 	position: absolute;
 	bottom: 0;
