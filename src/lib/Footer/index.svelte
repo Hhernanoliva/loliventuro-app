@@ -10,7 +10,7 @@
 		<ul>
 			
 			<li class:active={$page.path === '/about'}> <a sveltekit:prefetch href="/about"><IconAbout /> Sobre Mi </a></li>
-			<li class:active={$page.path === '/asis'}><a sveltekit:prefetch href="/asis"><IconAsistencia style="margin-bottom: 10px;"/> Blog </a></li>
+			<li class:active={$page.path === '/asis'}><a sveltekit:prefetch href="/asis"><IconAsistencia style="margin-bottom: 10px;"/> MORA </a></li>
 		</ul>
 	</nav>
 </footer>
